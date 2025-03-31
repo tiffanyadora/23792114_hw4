@@ -1,7 +1,7 @@
 # WildcatWear
 ### By: Tiffany Adora (23792114)
 
-WildcatWear is an e-commerce website project for selling UA merchandise that uses HTML/CSS for the frontend, JavaScript for dynamic content, and Django for the backend. Now, IT features dynamic client-side functionalities including real-time searching, product submission, and other interactive features.
+WildcatWear is an e-commerce website project for selling UA merchandise that uses HTML/CSS for the frontend, JavaScript for dynamic content, and Django for the backend. Now, It features dynamic client-side functionalities including real-time searching, product submission, and other interactive features.
 
 This is a continuation of the WildcatWear-website project.
 

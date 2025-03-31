@@ -1,4 +1,5 @@
-// like-system.js
+// like-system.js: 
+// A heart icon for favoriting and un-favoriting a specific product
 document.addEventListener('DOMContentLoaded', function() {
 
     initializeLikeSystem();

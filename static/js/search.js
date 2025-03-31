@@ -1,4 +1,5 @@
-// static/js/search.js
+// search.js
+// for the search functionality (save recent searches to localstorage)
 document.addEventListener('DOMContentLoaded', () => {
     // Get all search forms (desktop & mobile)
     const searchForms = document.querySelectorAll('form[action$="search/"]');

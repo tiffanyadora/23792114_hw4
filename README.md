@@ -139,7 +139,7 @@ To run this project, please follow the steps below:
      - Description
      - Price
      - Category
-     - Image filename (e.g., "arizona-tshirt.jpg")
+     - Image filename (e.g., "totebag.jpg")
    - Submit the form and verify the product appears in the product feed without page refresh
 
 3. **Rating System**

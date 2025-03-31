@@ -1,4 +1,5 @@
 // sorting.js
+// Sorting the search results (lowest to highest & highest to lowest). For now it supports two fields: price and rating.
 document.addEventListener('DOMContentLoaded', function() {
     const sortSelect = document.getElementById('product-sort');
     if (sortSelect) {

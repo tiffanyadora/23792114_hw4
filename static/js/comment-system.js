@@ -1,4 +1,4 @@
-// Modify comment-system.js to use a function instead of directly executing code
+// Comment-system.js: for users give reviews to product
 function initializeCommentSystem() {
     const commentForm = document.getElementById('comment-form');
     const commentsList = document.getElementById('comments-list');

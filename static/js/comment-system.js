@@ -1,5 +1,5 @@
 // comment-system.js
-// users are able to give reviews & comments to specific product. then, save it to the localstorage.
+// Users are able to give reviews & comments to specific product. then, save it to the localstorage.
 function initializeCommentSystem() {
     const commentForm = document.getElementById('comment-form');
     const commentsList = document.getElementById('comments-list');

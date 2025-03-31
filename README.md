@@ -1,9 +1,9 @@
 # WildcatWear
 ### By: Tiffany Adora (23792114)
 
-WildcatWear is an e-commerce website project for selling UA merchandise that uses HTML/CSS for the frontend, JavaScript for dynamic content, and Django for the backend. This project now features dynamic client-side functionalities including real-time searching, product submission, and interactive features.
+WildcatWear is an e-commerce website project for selling UA merchandise that uses HTML/CSS for the frontend, JavaScript for dynamic content, and Django for the backend. Now, IT features dynamic client-side functionalities including real-time searching, product submission, and other interactive features.
 
-This is a continuation of the WildcatWear-website project (https://github.com/tiffanyadora/WildcatWear-website).
+This is a continuation of the WildcatWear-website project.
 
 ## New JavaScript Features
 
@@ -20,7 +20,7 @@ For Assignment 4, the following client-side JavaScript features have been implem
 
 3. **Rating System**
    - Interactive star rating that updates the UI
-   - Product ratings persist in localStorage
+   - Product ratings stored in localStorage
 
 4. **Sorting Options**
    - Sort products by price (low to high, high to low)
@@ -40,10 +40,13 @@ wildcatwear/
 |   |   ├── style.css           # Site-wide style
 |   |   ├── utility-styles.css  # Utility classes
 |   ├── js/                     # JavaScript files
-|   |   ├── search.js           # Live search functionality
-|   |   ├── product-form.js     # Product submission logic
-|   |   ├── rating.js           # Star rating system
-|   |   ├── sorting.js          # Product sorting functionality
+│   │   ├── product-data.js    # CSV parsing and data handling
+│   │   ├── product-submission.js  # Product form handling
+│   │   ├── product-navigation.js  # Product browsing
+│   │   ├── search.js          # Live search functionality
+│   │   ├── sorting.js         # Product sorting
+│   │   ├── comment-system.js  # Product comments
+│   │   └── like-system.js     # Product likes/favorites
 |   ├── images/                 # Images assets
 |
 ├── store/                      # Main application
@@ -169,27 +172,6 @@ To run this project, please follow the steps below:
    - Try searching for:
      - Query: "Arizona" -> Shows all merchandise that includes "Arizona" in the name
      - Query: "  University  of Arizona " (with scattered blank spaces) -> Shows results for "University of Arizona"
-
-### Running Tests
-
-To run the test script, in the project folder:
-```
-cd store
-python tests.py
-```
-
-What is tested:
-- Fetching all products
-- Fetching single product by ID
-- Retrieving visuals for a product
-- HTML generation for visuals
-
-## JavaScript Implementation Details
-
-- **PapaParse:** The project uses PapaParse to read and parse CSV files directly in the browser
-- **localStorage:** Used to store search history and product ratings
-- **DOM Manipulation:** All dynamic updates are performed without page refresh
-- **Event Listeners:** Used to capture user interactions such as search input, form submission, and product rating
 
 ## Acknowledgements
 - University of Arizona for brand guidelines

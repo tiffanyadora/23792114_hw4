@@ -5,6 +5,8 @@ from django.conf import settings
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404
 from .models import Product, VisualContent
+from django.views.decorators.csrf import csrf_exempt
+import json
 
 def home(request):
     category = request.GET.get('category', None)
@@ -65,12 +67,6 @@ def search (request):
     products = [p for p in Product.get_all() if query in " ".join(p.name.lower().split())]
     
     return render(request, 'search.html', {'results': products, 'query': query})
-
-
-# Add this to views.py
-from django.http import JsonResponse
-from django.views.decorators.csrf import csrf_exempt
-import json
 
 @csrf_exempt
 def add_product_api(request):
